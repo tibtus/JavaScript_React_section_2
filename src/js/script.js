@@ -1,19 +1,34 @@
 "use strict";
 
-let number = 5;
-const leftBorderWidth = 1;
+/* alert('Hello'); */
 
-number = 20;
-console.log(number);
+/* const result = confirm("вы тут ?");
 
-const obj = {
-    a:50
-};
+console.log(result); */
 
-obj.a = 10;
+/* const answer = prompt("вы тут ?", "");
 
-console.log(obj);
+console.log(answer);
+
+console.log(typeof(answer)); */
+
+/* 
+const answers = [];
+
+answers[0] = prompt("Дай мне Фамилию", "" );
+answers[1] = prompt("Дай мне Имя", "" );
+answers[2] = prompt("Дай мне номер телефона", "" );
+
+console.log(typeof(answers));
+console.log(answers);
+ */
+
+const category = 'toys';
+
+console.log('https://someurl.com/' + category);
+console.log(`https://someurl.com/${category}/5`);
 
 
-console.log(name);
-var name = 'Ivan';
+const user = 'Ivan';
+
+alert(`Привет, ${user}`);
