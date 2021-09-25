@@ -1,34 +1,59 @@
-"use strict";
+/* Задание на урок:
 
-/* alert('Hello'); */
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+'Сколько фильмов вы уже посмотрели?'
 
-/* const result = confirm("вы тут ?");
+2) Создать объект personalMovieDB и в него поместить такие свойства:
+    - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
 
-console.log(result); */
+3) Задайте пользователю по два раза вопросы:
+    - 'Один из последних просмотренных фильмов?'
+    - 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+    movies: {
+        'logan': '8.1'
+    }
 
-/* const answer = prompt("вы тут ?", "");
+Проверить, чтобы все работало без ошибок в консоли */
 
-console.log(answer);
-
-console.log(typeof(answer)); */
-
-/* 
-const answers = [];
-
-answers[0] = prompt("Дай мне Фамилию", "" );
-answers[1] = prompt("Дай мне Имя", "" );
-answers[2] = prompt("Дай мне номер телефона", "" );
-
-console.log(typeof(answers));
-console.log(answers);
- */
-
-const category = 'toys';
-
-console.log('https://someurl.com/' + category);
-console.log(`https://someurl.com/${category}/5`);
+'use strict';
 
 
-const user = 'Ivan';
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
 
-alert(`Привет, ${user}`);
+const personalMovieDB = {
+    count: `${numberOfFilms}`,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+
+};
+
+
+const moviesName = prompt("Один из последних просмотренных фильмов?", "");
+const moviesRating = prompt("На сколько оцените его?", "");
+
+const moviesName2 = prompt("Один из последних просмотренных фильмов?", "");
+const moviesRating2 = prompt("На сколько оцените его?", "");
+
+personalMovieDB.movies[`${moviesName}`] = `${moviesRating}` ;
+personalMovieDB.movies[`${moviesName2}`] = `${moviesRating2}` ;
+
+
+
+console.log(numberOfFilms);
+
+console.log(moviesName);
+console.log(moviesRating);
+
+console.log(moviesName2);
+console.log(moviesRating2);
+
+
+console.log(personalMovieDB);
