@@ -57,6 +57,40 @@ var d;
 } */
 
 
+/* let i = 0;
+while (i < 2) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+          b = prompt('На сколько оцените его?', '');
+
+
+    if (a != null && b !=null && a !='' && b !='' && a.length < 50 ) {
+        personalMovieDB.movies[a] = b ;
+        console.log('DONE');
+    } else {
+        i--;
+        console.log('Ошибка');
+    }
+    i++;
+}
+
+
+do {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?', '');
+
+
+    if (a != null && b !=null && a !='' && b !='' && a.length < 50 ) {
+    personalMovieDB.movies[a] = b ;
+    console.log('DONE');
+    } else {
+    i--;
+    console.log('Ошибка');
+    }
+    i++;
+
+}while (i < 2); */
+
+
 for (let i = 0; i < 2; i++) {
     const a = prompt('Один из последних просмотренных фильмов?', ''),
           b = prompt('На сколько оцените его?', '');
@@ -71,7 +105,6 @@ for (let i = 0; i < 2; i++) {
     }
          
 }
-
 
 
 if (personalMovieDB.count < 10) {
